@@ -836,7 +836,7 @@ namespace SonyAlphaUSB
 
         public int GetFNumber()
         {
-            CameraSetting setting = GetSetting(SettingIds.LiveViewState);
+            CameraSetting setting = GetSetting(SettingIds.FNumber);
             return setting != null ? setting.Value : 0;
         }
 
@@ -1239,7 +1239,7 @@ namespace SonyAlphaUSB
 
         public float GetFocusMagnifier()
         {
-            CameraSetting setting = GetSetting(SettingIds.MeteringMode);
+            CameraSetting setting = GetSetting(SettingIds.FocusMagnifier);
             return setting != null && setting.Value != 0 ? (float)setting.Value / 10 : 1;
         }
 
